@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MMT DEMO | Login</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- UIkit CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.10/dist/css/uikit.min.css" />
+
+<!-- UIkit JS -->
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.6.10/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.6.10/dist/js/uikit-icons.min.js"></script>
+    </head>
+
+<!-- Start CSS-->
+<style>
+	.uk-card{border-radius: 2.5px;border-left: #F6772A 3.25px solid;}
+	#loginButton,#resetPassword{color:#F6772A; text-decoration: none;font-weight: 700;}
+	#loginButton:before{
+		border-bottom: #F6772A 2.5px solid;
+	}
+	#rememberMe:focus {
+    outline: 0;
+    border-color: #F6772A;
+}
+#rememberMe:checked{background-color: #F6772A;}
+#resetPassword{color:#F6772A; text-decoration: none;font-weight: 700;}
+
+#emailUsername:focus,#password:focus{
+    outline: 0;
+    background-color: #fff;
+    color: #666;
+    border-color: #F6772A;
+}
+</style>
+<!-- Start End-->
+
+    <body>
+    	<div class="uk-margin uk-padding" >
+<!-- Start Element-->
+
+
+    		<div class="uk-card uk-card-default uk-card-body uk-width-1-3@m">
+    <h3 class="uk-card-title">Login To Your Account</h3>
+    <form>
+    <fieldset class="uk-fieldset">
+        <div class="uk-margin">
+            <input class="uk-input" type="text" placeholder="Username / Email" id="emailUsername">
+
+            
+        </div>
+
+        <div class="uk-margin">
+			<input class="uk-input" type="password" placeholder="Password" id="password">
+        </div>
+
+        <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
+            <label><input class="uk-checkbox" type="checkbox" checked id="rememberMe"> Remember Me</label>
+            
+        </div>
+        <div class="uk-margin uk-text-center">
+            <a class="uk-button-text" id="loginButton" onclick="loginfunc()">Login</a>
+        </div>
+
+        <div class="uk-margin uk-text-center">
+            <a href="#forget" id="resetPassword">Reset Password</a>
+        </div>
+
+
+    </fieldset>
+</form>
+</div>
+
+
+<!-- End Element-->
+    	</div>
+    </body>
+</html>
